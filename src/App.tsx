@@ -28,6 +28,7 @@ type CaseStudy = {
   audioHook: string;
   audioTranslation: string;
   visualHook: string;
+  cover: string;
   stats: string[];
   reasons: string[];
   extraReasons: string[];
@@ -45,6 +46,7 @@ const caseStudies: CaseStudy[] = [
     audioHook: '"Cycle-ge helbitte bye-bye, ee gaadi togondaginda 10,000rs saavira save aagta ide!"',
     audioTranslation: 'Say bye-bye to your cycle. Buying this vehicle saves you ₹10,000.',
     visualHook: 'A kid throws down his old cycle, with "TIME TO UPGRADE" appearing on screen.',
+    cover: 'https://reelwriter-portfolio-gallery.lovable.app/__l5e/assets-v1/a4f6cf45-2114-4218-88cc-0d9ee70ca463/reel-e-scooters.jpg',
     stats: ['17.2K likes', '13.5K shares', '5.9K saves', '3.8K comments', '+1,455 followers'],
     reasons: [
       'Text hook: "TIME TO UPGRADE" on screen',
@@ -67,6 +69,7 @@ const caseStudies: CaseStudy[] = [
     audioHook: '"Hey, hey, nilsi bro, nilsi! Which bike is that?"',
     audioTranslation: 'Hey, stop bro, stop! Which bike is that?',
     visualHook: 'An e-cycle moving at scooter-like speed, with a biker chasing it in disbelief.',
+    cover: 'https://reelwriter-portfolio-gallery.lovable.app/__l5e/assets-v1/67d30786-1a1a-4303-bd84-27e162eb991b/reel-electric-cycles.jpg',
     stats: ['76.3K likes', '56.4K shares', '20.7K saves', '506 comments', '+1,859 followers'],
     reasons: [
       'Curiosity hook: "cycle or bike?" from the first second',
@@ -90,6 +93,7 @@ const caseStudies: CaseStudy[] = [
     audioHook: '"Paapri, neevu nimma thammange ee RC car-an kodsilla andre, avru aloodu anthu guarantee!"',
     audioTranslation: "Poor sisters, if you don't gift this RC car to your younger brother, he will definitely cry. Guaranteed!",
     visualHook: 'A kid doing stunts and tricks with the RC car — speed, spins and full app control on display.',
+    cover: 'https://reelwriter-portfolio-gallery.lovable.app/assets/reel-rc-cars-CDfunwUK.jpg',
     stats: ['12K+ shares', '11K+ likes', '3K saves', '3K comments'],
     reasons: [
       'Emotional hook: spoke directly to sisters, with a playful guilt angle',
@@ -113,6 +117,7 @@ const caseStudies: CaseStudy[] = [
     audioHook: '"Nodi bro, petrol bike-ge petrol hakta idini."',
     audioTranslation: "Look bro, I'm putting petrol in my petrol bike.",
     visualHook: "Pouring petrol into the bike's tank — a simple, real action that stops the scroll.",
+    cover: 'https://reelwriter-portfolio-gallery.lovable.app/__l5e/assets-v1/2b0c966b-173c-4ce8-92e2-b4eb15d5145d/reel-petrol-pocket-bikes.jpg',
     stats: ['121K likes', '17.7K shares', '10K saves', '647 comments', '+5,106 followers', '2,407 bio link taps'],
     reasons: [
       'Simple, real hook: a plain action that makes people curious',
@@ -286,9 +291,8 @@ function App() {
                 <div className="reel-mockup">
                   <div className="mockup-top"><span>REEL</span><span>•••</span></div>
                   <div className="mockup-scene">
-                    <div className="scene-sun" />
-                    <div className="scene-product">{study.id === 'scooty' ? 'E' : study.id === 'electric' ? 'B' : study.id === 'petrol' ? 'P' : 'RC'}</div>
-                    <Play size={29} fill="currentColor" />
+                    <img src={study.cover} alt={`${study.brand} reel cover`} />
+                    <div className="mockup-play"><Play size={22} fill="currentColor" /></div>
                   </div>
                   <div className="mockup-bottom">
                     <span>♡  {study.stats[0].split(' ')[0]}</span>
