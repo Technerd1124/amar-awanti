@@ -190,7 +190,7 @@ function App() {
       <nav className="nav-wrap">
         <div className="nav-inner">
           <button className="brand-mark" onClick={() => scrollTo('top')} aria-label="Back to top">
-            AA<span>.</span>
+           ~ Amarendra<span>.</span>
           </button>
           <div className={`nav-links ${menuOpen ? 'is-open' : ''}`}>
             <button onClick={() => scrollTo('work')}>Selected work</button>
@@ -254,13 +254,18 @@ function App() {
       <section className="intro section-pad" id="about">
         <div className="section-kicker">01 / The person behind the performance</div>
         <div className="intro-grid">
-          <h2>Not just a writer.<br /><span>A growth-minded maker.</span></h2>
-          <div className="intro-body">
-            <p className="large-copy">I'm <strong>Amarender Awanti</strong>, a content strategist and producer from Bangalore. At Bharat Cycle Hub, I planned, scripted, and directed content for <strong>22 social accounts</strong> across cycles, e-vehicles, RC cars, and toys.</p>
-            <p>I don't just write scripts. I plan, I direct, and I track the result. Every piece is built to earn attention first, then move people closer to a decision.</p>
-            <div className="skill-row"><span className="skill-label">Languages</span><span>Kannada · Telugu · English · Hindi · Tamil</span></div>
-            <div className="skill-row"><span className="skill-label">Education</span><span>Diploma in Computer Science Engineering (2025) · CGPA 8.4</span></div>
-            <div className="tool-list"><span className="skill-label">Tools</span><div>{['Claude', 'ChatGPT', 'Gemini', 'Blowup', 'Grammarly', 'Instagram'].map((tool: string) => <span className="tool-chip" key={tool}>{tool}</span>)}</div></div>
+          <div className="intro-left">
+            <img src="/src/amar.png" alt="Amarender Awanti" className="profile-image" />
+          </div>
+          <div className="intro-right">
+            <h2>Not just a writer.<br /><span>A growth-minded maker.</span></h2>
+            <div className="intro-body">
+              <p className="large-copy">I'm <strong>Amarender Awanti</strong>, a content strategist and producer from Bangalore. At Bharat Cycle Hub, I planned, scripted, and directed content for <strong>22 social accounts</strong> across cycles, e-vehicles, RC cars, and toys.</p>
+              <p>I don't just write scripts. I plan, I direct, and I track the result. Every piece is built to earn attention first, then move people closer to a decision.</p>
+              <div className="skill-row"><span className="skill-label">Languages</span><span>Kannada · Telugu · English · Hindi · Tamil</span></div>
+              <div className="skill-row"><span className="skill-label">Education</span><span>Diploma in Computer Science Engineering (2025) · CGPA 8.4</span></div>
+              <div className="tool-list"><span className="skill-label">Tools</span><div>{['Claude', 'ChatGPT', 'Gemini', 'Blowup', 'Grammarly', 'Instagram'].map((tool: string) => <span className="tool-chip" key={tool}>{tool}</span>)}</div></div>
+            </div>
           </div>
         </div>
       </section>
@@ -405,20 +410,26 @@ function App() {
       <section className="contact section-pad" id="contact">
         <div className="contact-orb" />
         <div className="section-kicker">06 / Start a conversation</div>
-        <h2>Let's make something<br /><em>worth stopping for.</em></h2>
-        <p className="contact-copy">I'm ready to help your brand grow through content that gets views, leads, and sales.</p>
-        <div className="contact-grid">
-          <a href="mailto:amarendraawanti28@gmail.com" className="contact-item"><Mail size={20} /><span><small>Email</small>amarendraawanti28@gmail.com</span><ArrowUpRight size={18} /></a>
-          <a href="tel:7795505588" className="contact-item"><span className="contact-symbol">↗</span><span><small>Call</small>7795505588</span><ArrowUpRight size={18} /></a>
-          <div className="contact-item"><span className="contact-symbol">◎</span><span><small>Based in</small>Bangalore</span></div>
-        </div>
-        <div className="contact-footer">
-          <div><span>Open to roles</span><strong>Content Strategist · Scriptwriter · Social Media Producer · Content Producer</strong></div>
-          <div className="social-links">
-            <a href="https://www.instagram.com/scooty.adda" target="_blank" rel="noreferrer">@scooty.adda</a>
-            <a href="https://www.instagram.com/emviper_bch" target="_blank" rel="noreferrer">@emviper_bch</a>
-            <a href="https://www.instagram.com/pocketrcar" target="_blank" rel="noreferrer">@pocketrcar</a>
-            <a href="https://www.instagram.com/pocket_bike46" target="_blank" rel="noreferrer">@pocket_bike46</a>
+        <div className="contact-layout">
+          <div className="contact-content">
+            <h2>Let's make something<br /><em>worth stopping for.</em></h2>
+            <p className="contact-copy">I'm ready to help your brand grow through content that gets views, leads, and sales.</p>
+            <div className="contact-flex">
+              <a href="mailto:amarendraawanti28@gmail.com" className="contact-item"><Mail size={20} /><span><small>Email</small>amarendraawanti28@gmail.com</span><ArrowUpRight size={18} /></a>
+              <a href="tel:7795505588" className="contact-item"><span className="contact-symbol">↗</span><span><small>Call</small>7795505588</span><ArrowUpRight size={18} /></a>
+              <div className="contact-item"><span className="contact-symbol">◎</span><span><small>Based in</small>Bangalore</span></div>
+            </div>
+            <div className="contact-footer">
+              <div><span>Open to roles</span><strong>Content Strategist · Scriptwriter · Social Media Producer · Content Producer</strong></div>
+              <div className="social-links">
+                <a href="https://www.instagram.com/scooty.adda" target="_blank" rel="noreferrer">@scooty.adda</a>
+                <a href="https://www.instagram.com/emviper_bch" target="_blank" rel="noreferrer">@emviper_bch</a>
+                <a href="https://www.instagram.com/pocketrcar" target="_blank" rel="noreferrer">@pocketrcar</a>
+                <a href="https://www.instagram.com/pocket_bike46" target="_blank" rel="noreferrer">@pocket_bike46</a>
+              </div>
+            </div>
+          </div>
+          <div className="contact-image-wrapper">
           </div>
         </div>
       </section>
