@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import amarImage from "./amar.png";
 import {
   ArrowDown,
   ArrowUp,
@@ -255,7 +256,12 @@ function App() {
         <div className="section-kicker">01 / The person behind the performance</div>
         <div className="intro-grid">
           <div className="intro-left">
-            <img src="/src/amar.png" alt="Amarender Awanti" className="profile-image" />
+            {/* <img src="/src/amar.png" alt="Amarender Awanti" className="profile-image" /> */}
+            <img
+  src={amarImage}
+  alt="Amarender Awanti"
+  className="profile-image"
+/>
           </div>
           <div className="intro-right">
             <h2>Not just a writer.<br /><span>A growth-minded maker.</span></h2>
