@@ -231,7 +231,7 @@ function App() {
             <div className="orbit orbit-one" />
             <div className="orbit orbit-two" />
             <div className="hero-card hero-card-main">
-              <div className="card-topline"><span>AA / 2025</span><span>01—04</span></div>
+              <div className="card-topline"><span>Amarendra / 2025</span><span>01—04</span></div>
               <div className="hero-card-icon"><Clapperboard size={30} /></div>
               <p>Scripts that turn<br /><strong>views into leads.</strong></p>
               <div className="hero-card-footer"><span>Content with a point of view</span><ArrowUpRight size={18} /></div>
