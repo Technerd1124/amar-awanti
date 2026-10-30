@@ -234,7 +234,7 @@ function App() {
               <div className="card-topline"><span>Amarendra / 2025</span><span>01—04</span></div>
               <div className="hero-card-icon"><Clapperboard size={30} /></div>
               <p>Scripts that turn<br /><strong>views into leads.</strong></p>
-              <div className="hero-card-footer"><span>Content with a point of view</span><ArrowUpRight size={18} /></div>
+              <div className="hero-card-footer"><span>Content with a point of view</span><ArrowUpRight size={17} /></div>
             </div>
             <div className="floating-note note-views"><BarChart3 size={17} /><span><b>4.8M</b><small>top reel views</small></span></div>
             <div className="floating-note note-accounts"><Target size={17} /><span><b>22</b><small>accounts managed</small></span></div>
